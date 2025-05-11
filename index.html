@@ -22,26 +22,31 @@
     }
 
     table, th, td {
-      border: 1px solid #333;
+      border: 3px solid white;
+      border-collapse: collapse;
+      border-radius: 10px;
+      border-style: dotted;
+      
     }
 
     th {
-      background-color: #ddd;
+      background-color: rgb(108, 171, 190);
       padding: 10px;
     }
 
     td {
       padding: 8px;
       text-align: center;
+
+    }
+
+    tr:nth-child(odd) {
+    background-color: lightblue;
     }
 
     a {
       color: #007BFF;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     ul, ol {
@@ -66,30 +71,33 @@
 
   <h2 id="table-section">Sample Table</h2>
   <table>
-    <thead>
-      <tr>
+      <colgroup>
+    <col span="3" style="background-color: #D6EEEE">
+      </colgroup>
+
+      <tr style="height:50px">
         <th>Name</th>
         <th>Age</th>
         <th>Country</th>
       </tr>
-    </thead>
-    <tbody>
-      <tr>
+
+      
+      <tr style="height:50px">
         <td>Ahnaf</td>
         <td>10</td>
         <td>Bangladesh</td>
       </tr>
-      <tr>
+      <tr style="height:50px">
         <td>Yashfi</td>
         <td>09</td>
         <td>Bangladesh</td>
       </tr>
-      <tr>
+      <tr style="height:50px">
         <td>Dan</td>
         <td>10</td>
         <td>Malaysia</td>
       </tr>
-    </tbody>
+
   </table>
 
   <h2 id="list-section">My Lists</h2>
